@@ -1,0 +1,2671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suyash Jaiswal — Cloud Engineer & Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- DevIcons for tech skill icons -->
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise-overlay"></div>
+
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+
+    <!-- Logo -->
+    <a href="#home" class="nav-logo">
+      <div class="logo-monogram">SJ</div>
+      <div class="logo-text">
+        <span class="logo-name">Suyash Jaiswal</span>
+        <span class="logo-title">Cloud Engineer &amp; Developer</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"         class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about"        class="nav-link"        data-section="about">About</a></li>
+      <li><a href="#skills"       class="nav-link"        data-section="skills">Skills</a></li>
+      <li><a href="#projects"     class="nav-link"        data-section="projects">Projects</a></li>
+      <li><a href="#certificates" class="nav-link"        data-section="certificates">Certificates</a></li>
+      <li><a href="#internship"   class="nav-link"        data-section="internship">Experience</a></li>
+      <li><a href="#education"    class="nav-link"        data-section="education">Education</a></li>
+      <li><a href="#contact"      class="nav-link"        data-section="contact">Contact</a></li>
+    </ul>
+
+    <!-- Right side -->
+    <div class="nav-right">
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home"         class="mobile-link"><i class="fas fa-house"></i> Home</a></li>
+      <li><a href="#about"        class="mobile-link"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#skills"       class="mobile-link"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="#projects"     class="mobile-link"><i class="fas fa-diagram-project"></i> Projects</a></li>
+      <li><a href="#certificates" class="mobile-link"><i class="fas fa-certificate"></i> Certificates</a></li>
+      <li><a href="#internship"   class="mobile-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+      <li><a href="#education"    class="mobile-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#contact"      class="mobile-link"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="home">
+
+    <div class="hero-container">
+
+      <!-- ---- LEFT SIDE ---- -->
+      <div class="hero-left">
+
+        <!-- Status badge -->
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Open to Opportunities</span>
+        </div>
+
+        <!-- Greeting -->
+        <p class="hero-greeting">Hello, I'm</p>
+
+        <!-- Name -->
+        <h1 class="hero-name">
+          <span class="name-line">Suyash</span>
+          <span class="name-line accent">Jaiswal</span>
+        </h1>
+
+        <!-- Typing animation -->
+        <div class="hero-typing-wrap">
+          <span class="typing-prefix">// </span>
+          <span class="typing-text" id="typingText"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+
+        <!-- Intro -->
+        <p class="hero-intro">
+          I am a Computer Science student passionate about building
+          <span class="highlight">scalable applications</span>, web development and
+          <span class="highlight">cloud technologies</span>. I enjoy solving
+          real-world problems using programming, data structures and modern technologies.
+        </p>
+
+        <!-- Skill tags -->
+        <div class="hero-tags">
+          <span class="tag"><i class="fab fa-python"></i> Python</span>
+          <span class="tag"><i class="fab fa-aws"></i> AWS</span>
+          <span class="tag"><i class="fab fa-react"></i> React</span>
+          <span class="tag"><i class="fab fa-docker"></i> Docker</span>
+          <span class="tag"><i class="fab fa-linux"></i> Linux</span>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://drive.google.com/uc?export=download&id=10kr8hy4Vqtyl9G3hch96DzJyAw8CgeGr" 
+   class="btn btn-secondary" 
+   target="_blank" 
+   download>
+  <i class="fas fa-download"></i>
+  <span>Resume</span>
+</a>
+          <!-- <a href="mailto:suyash2004jaiswal@gmail.com" class="btn btn-ghost">
+  <i class="fas fa-envelope"></i>
+  <span>Contact Me</span>
+</a> -->
+        </div>
+
+        <!-- Social links -->
+        <!-- Social links -->
+<div class="hero-social">
+  <a href="https://github.com/2004Suyash" class="social-link" target="_blank" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/suyash-jaiswal-314100290" class="social-link" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="mailto:suyash2004jaiswal@gmail.com" class="social-link" aria-label="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
+
+      </div><!-- /hero-left -->
+
+      <!-- ---- RIGHT SIDE ---- -->
+      <div class="hero-right">
+        <div class="profile-card">
+          <div class="profile-glass">
+
+            <!-- Terminal -->
+            <div class="terminal">
+              <div class="terminal-bar">
+                <span class="t-dot red"></span>
+                <span class="t-dot yellow"></span>
+                <span class="t-dot green"></span>
+                <span class="t-title">suyash@cloud:~$</span>
+              </div>
+              <div class="terminal-body">
+                <p><span class="t-cmd">$ whoami</span></p>
+                <p class="t-out">Suyash Jaiswal</p>
+                <p><span class="t-cmd">$ cat skills.txt</span></p>
+                <p class="t-out">Cloud | Web | DSA | DevOps</p>
+                <p><span class="t-cmd">$ ./run passion.sh</span></p>
+                <p class="t-out t-blink">Building the future... <span>█</span></p>
+              </div>
+            </div>
+
+            <!-- Enhanced Avatar -->
+            <div class="avatar-ring">
+              <div class="avatar-outer-ring">
+                <div class="avatar-middle-ring">
+                  <div class="avatar">
+                    <span>SJ</span>
+                    <div class="avatar-glow"></div>
+                  </div>
+                </div>
+                <div class="orbit-dot"></div>
+              </div>
+              <div class="avatar-badge badge-top">
+                <i class="fab fa-aws"></i> Cloud
+              </div>
+              <div class="avatar-badge badge-bottom">
+                <i class="fas fa-code"></i> Dev
+              </div>
+            </div>
+
+          </div><!-- /profile-glass -->
+
+          <!-- Floating tech icons -->
+          <div class="float-icon fi-1"><i class="fab fa-aws"></i><span>AWS</span></div>
+          <div class="float-icon fi-2"><i class="fab fa-docker"></i><span>Docker</span></div>
+          <div class="float-icon fi-3"><i class="fab fa-react"></i><span>React</span></div>
+          <div class="float-icon fi-4"><i class="fab fa-linux"></i><span>Linux</span></div>
+          <div class="float-icon fi-5"><i class="fab fa-git-alt"></i><span>Git</span></div>
+          <div class="float-icon fi-6"><i class="fab fa-python"></i><span>Python</span></div>
+
+        </div><!-- /profile-card -->
+      </div><!-- /hero-right -->
+
+    </div><!-- /hero-container -->
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+    </div>
+
+  </section><!-- /hero -->
+
+
+ 
+    <!-- ==================== PLACEHOLDER SECTIONS ==================== -->
+
+<!-- ==================== ABOUT SECTION ==================== -->
+<!-- ==================== ABOUT SECTION ==================== -->
+<section class="about" id="about">
+
+  <!-- Section Header -->
+  <div class="section-header">
+    <p class="section-tag">// get to know me</p>
+    <h2 class="section-title">About <span class="accent">Me</span></h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="about-container">
+
+    <!-- ========== LEFT SIDE ========== -->
+    <div class="about-left">
+
+      <div class="profile-wrapper">
+
+        <!-- Outer neon ring -->
+        <div class="neon-ring ring-outer"></div>
+
+        <!-- Inner neon ring -->
+        <div class="neon-ring ring-inner"></div>
+
+        <!-- Scanning laser line -->
+        <div class="laser-wrap">
+          <div class="laser-line"></div>
+        </div>
+
+        <!-- Corner brackets -->
+        <div class="bracket bracket-tl"></div>
+        <div class="bracket bracket-tr"></div>
+        <div class="bracket bracket-bl"></div>
+        <div class="bracket bracket-br"></div>
+
+        <!-- Floating info icons -->
+        <div class="about-float-icon afl-1">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Punjab</span>
+        </div>
+        <div class="about-float-icon afl-2">
+          <i class="fab fa-aws"></i>
+          <span>Cloud</span>
+        </div>
+        <div class="about-float-icon afl-3">
+          <i class="fas fa-code"></i>
+          <span>Code</span>
+        </div>
+
+        <!-- Profile image -->
+        <div class="profile-img-ring">
+          <div class="profile-img-wrap">
+            <img
+              src=""
+              alt="Suyash Jaiswal"
+              class="profile-img"
+              id="profileImg"
+              onerror="this.style.display='none';
+              document.getElementById('profileFallback').style.display='grid';"
+            />
+            <div class="profile-fallback" id="profileFallback">
+              <span>SJ</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /profile-wrapper -->
+
+      <!-- Badges -->
+      <div class="about-badges">
+        <span class="about-badge"><i class="fas fa-cloud"></i> Cloud Enthusiast</span>
+        <span class="about-badge"><i class="fas fa-globe"></i> Web Dev</span>
+        <span class="about-badge"><i class="fas fa-brain"></i> Problem Solver</span>
+      </div>
+
+    </div><!-- /about-left -->
+
+    <!-- ========== RIGHT SIDE ========== -->
+    <div class="about-right">
+
+      <!-- Name & subtitle -->
+      <div class="about-intro">
+        <p class="about-greeting">// hello world</p>
+        <h3 class="about-name">Suyash <span class="accent">Jaiswal</span></h3>
+        <div class="about-role-pill">
+          <span class="role-dot"></span>
+          Aspiring Cloud Engineer
+        </div>
+      </div>
+
+      <!-- About text -->
+      <div class="about-text">
+        <p>
+          I'm a <span class="highlight">B.Tech Computer Science & Engineering</span>
+          student at Lovely Professional University, passionate about building scalable
+          software systems, modern web applications, and cloud-powered solutions. I enjoy
+          turning ideas into real-world projects — from designing intuitive web interfaces
+          to developing efficient backend systems.
+        </p>
+        <p>
+          I continuously improve my skills in <span class="highlight">Software Development</span>,
+          <span class="highlight">Web Technologies</span>, and
+          <span class="highlight">Cloud Computing</span>, while actively practising
+          Data Structures &amp; Algorithms on LeetCode, CodeChef, and GeeksforGeeks.
+          I believe in learning by building — clean architecture, scalability, practical
+          problem-solving.
+        </p>
+      </div>
+
+      <!-- Coding platforms -->
+      <div class="coding-platforms">
+        <p class="platforms-label">// active on</p>
+        <div class="platforms-icons">
+
+          <a href="https://leetcode.com/u/suyash_jaiswal04/" target="_blank"
+             class="platform-link" aria-label="LeetCode">
+            <div class="platform-icon lc-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.8a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+              </svg>
+            </div>
+            <span>LeetCode</span>
+          </a>
+
+          <a href="https://www.codechef.com/users/suyash_2004" target="_blank"
+             class="platform-link" aria-label="CodeChef">
+            <div class="platform-icon cc-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.257.004C5.08.004 0 5.373 0 12c0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12C24 5.373 18.628 0 12 0zm-.002 1.77c5.647 0 10.23 4.583 10.23 10.23S16.902 22.23 11.255 22.23C5.608 22.23 1.025 17.647 1.025 12S5.608 1.77 11.255 1.77zM8.59 6.115c-.87 0-1.61.247-2.22.74-.609.495-.914 1.118-.914 1.87 0 .555.158 1.027.473 1.416.314.389.784.7 1.41.932l1.067.392c.43.158.74.34.928.547.188.207.282.462.282.766 0 .365-.14.661-.42.888-.28.227-.651.34-1.113.34-.493 0-.893-.133-1.2-.4-.306-.267-.472-.63-.496-1.09H5.27c.024.837.31 1.496.858 1.977.548.48 1.275.72 2.18.72.94 0 1.693-.256 2.258-.769.565-.513.848-1.183.848-2.01 0-.592-.166-1.09-.497-1.494-.331-.404-.844-.726-1.537-.965l-1.011-.364c-.382-.137-.655-.302-.818-.494a1.09 1.09 0 0 1-.244-.717c0-.326.122-.592.366-.798.244-.206.567-.309.969-.309.42 0 .754.117.999.35.246.234.382.556.41.965h1.11c-.04-.77-.3-1.372-.782-1.808-.48-.436-1.113-.654-1.897-.654zm7.024.11h-1.19l-2.663 7.665h1.19l.637-1.89h2.862l.636 1.89h1.19zm-.596 1.636 1.047 3.028h-2.094z"/>
+              </svg>
+            </div>
+            <span>CodeChef</span>
+          </a>
+
+          <a href="https://www.geeksforgeeks.org/user/suyash2004jaiswal/" target="_blank"
+             class="platform-link" aria-label="GeeksforGeeks">
+            <div class="platform-icon gfg-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M21.45 14.315c-.143.28-.334.538-.565.745a3.691 3.691 0 0 1-1.104.695 4.51 4.51 0 0 1-3.116-.017 3.74 3.74 0 0 1-1.11-.7 3.715 3.715 0 0 1-.733-1.065H12.8a3.769 3.769 0 0 1-.733 1.065 3.74 3.74 0 0 1-1.11.7 4.51 4.51 0 0 1-3.116.017 3.691 3.691 0 0 1-1.104-.695 3.643 3.643 0 0 1-.565-.745A13.47 13.47 0 0 1 6 14H2v-4h4v-.315c0-.12.013-.24.02-.36H2V5h4.1a5.277 5.277 0 0 1 1.498-1.95C8.6 2.392 9.64 2 11.124 2c.706 0 1.373.126 2.001.378A5.115 5.115 0 0 1 14.8 3.5h.003a5.277 5.277 0 0 1 1.498 1.95H20v4.325c.007.12.02.24.02.36V10h4v4h-4c-.006.105-.02.21-.02.315zm-9.45.685a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+              </svg>
+            </div>
+            <span>GeeksforGeeks</span>
+          </a>
+
+        </div>
+      </div>
+
+    </div><!-- /about-right -->
+
+  </div><!-- /about-container -->
+
+  <!-- ========== INFO CARDS ========== -->
+  <div class="info-cards">
+
+    <div class="info-card" data-reveal>
+      <div class="info-card-icon">
+        <i class="fas fa-map-marker-alt"></i>
+      </div>
+      <div class="info-card-body">
+        <h4>Location</h4>
+        <p>Punjab, India</p>
+      </div>
+    </div>
+
+    <div class="info-card" data-reveal>
+      <div class="info-card-icon">
+        <i class="fas fa-cloud"></i>
+      </div>
+      <div class="info-card-body">
+        <h4>Specialization</h4>
+        <p>Cloud Computing & Software Dev</p>
+      </div>
+    </div>
+
+    <div class="info-card" data-reveal>
+      <div class="info-card-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <div class="info-card-body">
+        <h4>Degree</h4>
+        <p>B.Tech CSE — LPU</p>
+      </div>
+    </div>
+
+    <div class="info-card" data-reveal>
+      <div class="info-card-icon">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+      <div class="info-card-body">
+        <h4>Focus</h4>
+        <p>Web Dev & Scalable Systems</p>
+      </div>
+    </div>
+
+  </div><!-- /info-cards -->
+
+</section><!-- /about -->
+
+                        <!-- ABOUT SECTION END -->
+
+
+
+
+
+
+
+
+<!-- ==================== SKILLS SECTION ==================== -->
+<section class="skills" id="skills">
+
+  <!-- Section Header -->
+  <div class="section-header">
+    <p class="section-tag">// what i work with</p>
+    <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+    <div class="section-line"></div>
+    <p class="section-subtitle">
+      A toolkit of technologies and problem-solving abilities I use to
+      build scalable and efficient solutions.
+    </p>
+  </div>
+
+  <!-- ========== CATEGORY TABS ========== -->
+  <div class="skills-tabs" id="skillsTabs">
+    <button class="skills-tab active" data-cat="all">All</button>
+    <button class="skills-tab" data-cat="programming">Programming</button>
+    <button class="skills-tab" data-cat="web">Web Dev</button>
+    <button class="skills-tab" data-cat="cloud">Cloud & Tools</button>
+    <button class="skills-tab" data-cat="soft">Soft Skills</button>
+  </div>
+
+  <div class="skills-wrapper">
+
+    <!-- ======================================================
+         CATEGORY 1 — PROGRAMMING LANGUAGES
+    ====================================================== -->
+    <div class="skill-category" data-cat="programming">
+      <div class="category-label">
+        <span class="cat-num">01</span>
+        <h3>Programming <span class="accent">Languages</span></h3>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-c-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">C</h4>
+            <p class="skill-desc">Strong foundation in procedural programming, memory management, and system-level logic.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-cplusplus-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">C++</h4>
+            <p class="skill-desc">OOP, Data Structures, and efficient algorithm implementation for competitive programming.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-python-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">Python</h4>
+            <p class="skill-desc">Scripting, automation, data processing, and rapid prototyping of solutions.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-java-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">Java</h4>
+            <p class="skill-desc">Object-oriented design patterns and application development fundamentals.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+      </div><!-- /skills-grid -->
+    </div><!-- /programming -->
+
+    <!-- ======================================================
+         CATEGORY 2 — WEB DEVELOPMENT
+    ====================================================== -->
+    <div class="skill-category" data-cat="web">
+      <div class="category-label">
+        <span class="cat-num">02</span>
+        <h3>Web <span class="accent">Development</span></h3>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="skills-grid skills-grid--wide">
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-html5-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">HTML5</h4>
+            <p class="skill-desc">Semantic, accessible markup for modern web structure.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-css3-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">CSS3</h4>
+            <p class="skill-desc">Flexbox, Grid, animations, and fully responsive design systems.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">JavaScript</h4>
+            <p class="skill-desc">Dynamic, interactive front-end development with modern ES6+.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-react-original colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">React</h4>
+            <p class="skill-desc">Component-based UI architecture for scalable front-end apps.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-nodejs-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">Node.js</h4>
+            <p class="skill-desc">Backend runtime for building scalable server-side applications.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-express-original"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">Express.js</h4>
+            <p class="skill-desc">Lightweight framework for building clean and fast REST APIs.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-mongodb-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">MongoDB</h4>
+            <p class="skill-desc">NoSQL database for scalable, flexible data storage solutions.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-mysql-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">MySQL</h4>
+            <p class="skill-desc">Relational database design and querying for structured data.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+      </div><!-- /skills-grid -->
+    </div><!-- /web -->
+
+    <!-- ======================================================
+         CATEGORY 3 — CLOUD & TOOLS
+    ====================================================== -->
+    <div class="skill-category" data-cat="cloud">
+      <div class="category-label">
+        <span class="cat-num">03</span>
+        <h3>Cloud & <span class="accent">Tools</span></h3>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">AWS</h4>
+            <p class="skill-desc">Cloud fundamentals — deploying and managing scalable services.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-docker-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">Docker</h4>
+            <p class="skill-desc">Containerization for consistent dev and deployment environments.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-git-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">Git</h4>
+            <p class="skill-desc">Version control for tracking changes and managing codebases.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-github-original"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">GitHub</h4>
+            <p class="skill-desc">Collaborative development, open-source contribution, and CI workflows.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-linux-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">Linux</h4>
+            <p class="skill-desc">Command-line operations, scripting, and system-level development.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+        <div class="skill-card" data-reveal>
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <i class="devicon-vscode-plain colored"></i>
+            </div>
+            <div class="skill-glow"></div>
+          </div>
+          <div class="skill-card-body">
+            <h4 class="skill-name">VS Code</h4>
+            <p class="skill-desc">Primary IDE with productivity extensions and custom workflows.</p>
+          </div>
+          <div class="skill-card-shine"></div>
+        </div>
+
+      </div><!-- /skills-grid -->
+    </div><!-- /cloud -->
+
+    <!-- ======================================================
+         CATEGORY 4 — SOFT SKILLS
+    ====================================================== -->
+    <div class="skill-category" data-cat="soft">
+      <div class="category-label">
+        <span class="cat-num">04</span>
+        <h3>Soft <span class="accent">Skills</span></h3>
+        <div class="cat-line"></div>
+      </div>
+
+      <div class="soft-skills-grid">
+
+        <div class="soft-card" data-reveal>
+          <div class="soft-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="soft-body">
+            <h4>Problem Solving</h4>
+            <p>Breaking down complex challenges into efficient, scalable solutions.</p>
+          </div>
+          <div class="soft-accent-line"></div>
+        </div>
+
+        <div class="soft-card" data-reveal>
+          <div class="soft-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="soft-body">
+            <h4>Team Collaboration</h4>
+            <p>Experience working effectively in collaborative development environments.</p>
+          </div>
+          <div class="soft-accent-line"></div>
+        </div>
+
+        <div class="soft-card" data-reveal>
+          <div class="soft-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="soft-body">
+            <h4>Adaptability</h4>
+            <p>Quickly learning new technologies and adapting to changing dev environments.</p>
+          </div>
+          <div class="soft-accent-line"></div>
+        </div>
+
+        <div class="soft-card" data-reveal>
+          <div class="soft-icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="soft-body">
+            <h4>Continuous Learning</h4>
+            <p>Actively improving skills through real projects and coding platforms.</p>
+          </div>
+          <div class="soft-accent-line"></div>
+        </div>
+
+      </div><!-- /soft-skills-grid -->
+    </div><!-- /soft -->
+
+  </div><!-- /skills-wrapper -->
+
+</section><!-- /skills -->
+
+
+<!-- SKILL SECTION END  -->
+
+
+
+
+
+
+
+
+
+<!-- ==================== PROJECTS SECTION ==================== -->
+<!-- ==================== PROJECTS SECTION ==================== -->
+<section class="projects" id="projects">
+
+  <!-- Section Header -->
+  <div class="section-header">
+    <p class="section-tag">// what i've built</p>
+    <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+    <div class="section-line"></div>
+    <p class="section-subtitle">
+      Projects that demonstrate my ability to build practical software
+      solutions using modern technologies.
+    </p>
+  </div>
+
+  <!-- ========== PROJECTS GRID ========== -->
+  <div class="projects-wrapper">
+
+    <!-- ── PROJECT 1 — Gift Gallery ── -->
+    <article class="project-card" data-reveal>
+
+      <div class="project-visual pv-gift">
+        <div class="pv-bg-glow"></div>
+
+        <!-- Glitch layers (clones of illustration) -->
+        <div class="glitch-layer glitch-r" aria-hidden="true"></div>
+        <div class="glitch-layer glitch-c" aria-hidden="true"></div>
+
+        <!-- Scanlines overlay -->
+        <div class="scanlines"></div>
+
+        <!-- CRT corner vignette -->
+        <div class="vignette"></div>
+
+        <!-- Illustration -->
+        <div class="pv-illustration" id="gift-illu">
+          <div class="gift-scene">
+            <div class="gift-box">
+              <div class="gift-lid">
+                <div class="gift-bow-left"></div>
+                <div class="gift-bow-right"></div>
+                <div class="gift-ribbon-top"></div>
+              </div>
+              <div class="gift-body">
+                <div class="gift-ribbon-h"></div>
+                <div class="gift-ribbon-v"></div>
+                <div class="gift-shine"></div>
+              </div>
+            </div>
+            <div class="gift-shadow"></div>
+            <div class="sparkle sp-1">✦</div>
+            <div class="sparkle sp-2">✦</div>
+            <div class="sparkle sp-3">◆</div>
+            <div class="sparkle sp-4">✦</div>
+          </div>
+        </div>
+
+        <span class="project-num">01</span>
+      </div>
+
+      <div class="project-body">
+        <div class="project-top-row">
+          <h3 class="project-title">Gift Gallery</h3>
+          <div class="project-links">
+            <a href="https://2004suyash.github.io/Gift-Gallery-Website/"
+               target="_blank" class="proj-btn proj-demo" aria-label="Live Demo">
+              <i class="fas fa-external-link-alt"></i><span>Demo</span>
+            </a>
+            <a href="https://github.com/2004Suyash/Gift-Gallery-Website"
+               target="_blank" class="proj-btn proj-github" aria-label="GitHub">
+              <i class="fab fa-github"></i><span>Code</span>
+            </a>
+          </div>
+        </div>
+        <p class="project-desc">
+          A personalized gift recommendation website that helps users find
+          meaningful gifts based on preferences and occasions.
+        </p>
+        <div class="project-tags">
+          <span class="ptag ptag-html">HTML</span>
+          <span class="ptag ptag-css">CSS</span>
+          <span class="ptag ptag-js">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="card-shine"></div>
+    </article>
+
+    <!-- ── PROJECT 2 — Micro-Plastic ── -->
+    <article class="project-card" data-reveal>
+
+      <div class="project-visual pv-eco">
+        <div class="pv-bg-glow"></div>
+        <div class="glitch-layer glitch-r" aria-hidden="true"></div>
+        <div class="glitch-layer glitch-c" aria-hidden="true"></div>
+        <div class="scanlines"></div>
+        <div class="vignette"></div>
+
+        <div class="pv-illustration">
+          <div class="eco-scene">
+            <div class="eco-globe">
+              <div class="eco-continent ec-1"></div>
+              <div class="eco-continent ec-2"></div>
+              <div class="eco-wave wave-1"></div>
+              <div class="eco-wave wave-2"></div>
+            </div>
+            <div class="eco-orbit">
+              <div class="eco-particle ep-1"></div>
+              <div class="eco-particle ep-2"></div>
+              <div class="eco-particle ep-3"></div>
+              <div class="eco-particle ep-4"></div>
+              <div class="eco-particle ep-5"></div>
+            </div>
+            <div class="eco-ring er-1"></div>
+            <div class="eco-ring er-2"></div>
+          </div>
+        </div>
+
+        <span class="project-num">02</span>
+      </div>
+
+      <div class="project-body">
+        <div class="project-top-row">
+          <h3 class="project-title">Monitoring Micro-Plastic</h3>
+          <div class="project-links">
+            <a href="https://2004suyash.github.io/Micro-Plastic/"
+               target="_blank" class="proj-btn proj-demo" aria-label="Live Demo">
+              <i class="fas fa-external-link-alt"></i><span>Demo</span>
+            </a>
+            <a href="https://github.com/2004Suyash/Micro-Plastic"
+               target="_blank" class="proj-btn proj-github" aria-label="GitHub">
+              <i class="fab fa-github"></i><span>Code</span>
+            </a>
+          </div>
+        </div>
+        <p class="project-desc">
+          A web-based project that analyzes environmental data to identify
+          patterns of micro-plastic pollution across water bodies.
+        </p>
+        <div class="project-tags">
+          <span class="ptag ptag-html">HTML</span>
+          <span class="ptag ptag-css">CSS</span>
+          <span class="ptag ptag-js">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="card-shine"></div>
+    </article>
+
+    <!-- ── PROJECT 3 — Currency Converter ── -->
+    <article class="project-card" data-reveal>
+
+      <div class="project-visual pv-finance">
+        <div class="pv-bg-glow"></div>
+        <div class="glitch-layer glitch-r" aria-hidden="true"></div>
+        <div class="glitch-layer glitch-c" aria-hidden="true"></div>
+        <div class="scanlines"></div>
+        <div class="vignette"></div>
+
+        <div class="pv-illustration">
+          <div class="finance-scene">
+            <div class="fin-screen">
+              <div class="fin-header">
+                <span class="fin-dot fd-r"></span>
+                <span class="fin-dot fd-y"></span>
+                <span class="fin-dot fd-g"></span>
+                <span class="fin-title-bar">currency.exe</span>
+              </div>
+              <div class="fin-chart">
+                <div class="fin-bar fb-1"></div>
+                <div class="fin-bar fb-2"></div>
+                <div class="fin-bar fb-3"></div>
+                <div class="fin-bar fb-4"></div>
+                <div class="fin-bar fb-5"></div>
+              </div>
+              <div class="fin-rate">
+                <span class="fr-from">$ USD</span>
+                <span class="fr-arrow">⇄</span>
+                <span class="fr-to">€ EUR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <span class="project-num">03</span>
+      </div>
+
+      <div class="project-body">
+        <div class="project-top-row">
+          <h3 class="project-title">Currency Converter Bot</h3>
+          <div class="project-links">
+            <a href="https://2004suyash.github.io/Currency-Converter-Bot/"
+               target="_blank" class="proj-btn proj-demo" aria-label="Live Demo">
+              <i class="fas fa-external-link-alt"></i><span>Demo</span>
+            </a>
+            <a href="https://github.com/2004Suyash/Currency-Converter-Bot"
+               target="_blank" class="proj-btn proj-github" aria-label="GitHub">
+              <i class="fab fa-github"></i><span>Code</span>
+            </a>
+          </div>
+        </div>
+        <p class="project-desc">
+          A real-time currency conversion tool allowing users to convert
+          values between multiple global currencies instantly.
+        </p>
+        <div class="project-tags">
+          <span class="ptag ptag-js">JavaScript</span>
+          <span class="ptag ptag-api">API</span>
+          <span class="ptag ptag-html">HTML</span>
+          <span class="ptag ptag-css">CSS</span>
+        </div>
+      </div>
+
+      <div class="card-shine"></div>
+    </article>
+
+    <!-- ── PROJECT 4 — Coming Soon ── -->
+    <article class="project-card project-card--soon" data-reveal>
+
+      <div class="project-visual pv-soon">
+        <div class="pv-bg-glow"></div>
+        <div class="glitch-layer glitch-r" aria-hidden="true"></div>
+        <div class="glitch-layer glitch-c" aria-hidden="true"></div>
+        <div class="scanlines"></div>
+        <div class="vignette"></div>
+
+        <div class="pv-illustration">
+          <div class="soon-scene">
+            <div class="soon-ring sr-1"></div>
+            <div class="soon-ring sr-2"></div>
+            <div class="soon-ring sr-3"></div>
+            <div class="soon-core">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="soon-orbit-dot sod-1"></div>
+            <div class="soon-orbit-dot sod-2"></div>
+            <div class="soon-orbit-dot sod-3"></div>
+          </div>
+        </div>
+
+        <span class="project-num">04</span>
+        <div class="coming-soon-badge">
+          <span class="cs-dot"></span>In Development
+        </div>
+      </div>
+
+      <div class="project-body">
+        <div class="project-top-row">
+          <h3 class="project-title">Upcoming Project</h3>
+          <div class="project-links">
+            <button class="proj-btn proj-demo proj-disabled" disabled>
+              <i class="fas fa-lock"></i><span>Soon</span>
+            </button>
+            <button class="proj-btn proj-github proj-disabled" disabled>
+              <i class="fab fa-github"></i><span>TBA</span>
+            </button>
+          </div>
+        </div>
+        <p class="project-desc">
+          A new project under development showcasing advanced architecture,
+          cloud-native patterns, and modern system design.
+        </p>
+        <div class="project-tags">
+          <span class="ptag ptag-tba">In Development</span>
+        </div>
+      </div>
+
+      <div class="card-shine"></div>
+    </article>
+
+  </div><!-- /projects-wrapper -->
+
+  <!-- CTA -->
+  <div class="projects-cta">
+    <a href="https://github.com/2004Suyash" target="_blank" class="btn btn-secondary">
+      <i class="fab fa-github"></i>
+      <span>View All on GitHub</span>
+    </a>
+  </div>
+
+</section>
+
+<!-- PROJECT SECTION END -->
+
+
+
+
+
+
+<!-- ==================== CERTIFICATES SECTION ==================== -->
+<section class="certificates" id="certificates">
+
+  <!-- Section Header -->
+  <div class="section-header">
+    <p class="section-tag">// achievements & learning</p>
+    <h2 class="section-title">Certifi<span class="accent">cations</span></h2>
+    <div class="section-line"></div>
+    <p class="section-subtitle">
+      Professional certifications that showcase my continuous learning
+      and technical growth.
+    </p>
+  </div>
+
+  <!-- ========== CERTIFICATE CARDS GRID ========== -->
+  <div class="cert-grid">
+
+    <!-- ── CERT 1 — Web Development ── -->
+    <div class="cert-card" data-reveal>
+
+      <!-- Card top glow -->
+      <div class="cert-card-glow"></div>
+
+      <!-- Platform badge -->
+      <div class="cert-platform-badge">
+        <span class="cpb-dot"></span>
+        MindLuster
+      </div>
+
+      <!-- Animated icon area -->
+      <div class="cert-icon-area cia-web">
+        <div class="cert-icon-bg"></div>
+        <!-- Browser window illustration -->
+        <div class="cert-visual">
+          <div class="cv-browser">
+            <div class="cvb-bar">
+              <span class="cvb-dot cvb-r"></span>
+              <span class="cvb-dot cvb-y"></span>
+              <span class="cvb-dot cvb-g"></span>
+              <span class="cvb-url"></span>
+            </div>
+            <div class="cvb-body">
+              <div class="cvb-line cvb-l1"></div>
+              <div class="cvb-line cvb-l2"></div>
+              <div class="cvb-line cvb-l3"></div>
+              <div class="cvb-tag">&lt;/&gt;</div>
+            </div>
+          </div>
+        </div>
+        <!-- Floating particles -->
+        <span class="cert-particle cp-1">{ }</span>
+        <span class="cert-particle cp-2">&lt;/&gt;</span>
+        <span class="cert-particle cp-3">#</span>
+      </div>
+
+      <!-- Card body -->
+      <div class="cert-body">
+        <div class="cert-info">
+          <h3 class="cert-title">Web Development</h3>
+          <p class="cert-platform-name">
+            <i class="fas fa-award"></i> MindLuster
+          </p>
+          <p class="cert-desc">
+            Certification covering modern web development fundamentals.
+          </p>
+        </div>
+
+        <!-- View button -->
+        <button
+          class="cert-view-btn"
+          data-cert-url="https://drive.google.com/file/d/1D5nejf1wuK9pkf9v-euEX8SgJW7PZjYA/preview"
+          data-cert-title="Web Development — MindLuster"
+          aria-label="View Certificate">
+          <i class="fas fa-external-link-alt"></i>
+          <span>View Certificate</span>
+          <div class="cvb-ripple"></div>
+        </button>
+      </div>
+
+      <!-- Shine -->
+      <div class="cert-shine"></div>
+    </div>
+
+    <!-- ── CERT 2 — Conflict Management ── -->
+    <div class="cert-card" data-reveal>
+      <div class="cert-card-glow"></div>
+
+      <div class="cert-platform-badge">
+        <span class="cpb-dot"></span>
+        Coursera
+      </div>
+
+      <div class="cert-icon-area cia-collab">
+        <div class="cert-icon-bg"></div>
+        <div class="cert-visual">
+          <!-- People collaboration visual -->
+          <div class="cv-collab">
+            <div class="cv-person cvp-1">
+              <div class="cvp-head"></div>
+              <div class="cvp-body"></div>
+            </div>
+            <div class="cv-connect-line"></div>
+            <div class="cv-person cvp-2">
+              <div class="cvp-head"></div>
+              <div class="cvp-body"></div>
+            </div>
+            <div class="cv-chat-bubble ccb-1">✓</div>
+            <div class="cv-chat-bubble ccb-2">✓</div>
+          </div>
+        </div>
+        <span class="cert-particle cp-1">✦</span>
+        <span class="cert-particle cp-2">◆</span>
+        <span class="cert-particle cp-3">✦</span>
+      </div>
+
+      <div class="cert-body">
+        <div class="cert-info">
+          <h3 class="cert-title">Conflict Management</h3>
+          <p class="cert-platform-name">
+            <i class="fas fa-award"></i> Coursera
+          </p>
+          <p class="cert-desc">
+            Professional certification focused on teamwork and communication.
+          </p>
+        </div>
+        <button
+          class="cert-view-btn"
+          data-cert-url="https://drive.google.com/file/d/1IjQgDtyhrThC56f9cujOFeB4ltJxK7Ai/preview"
+          data-cert-title="Conflict Management — Coursera"
+          aria-label="View Certificate">
+          <i class="fas fa-external-link-alt"></i>
+          <span>View Certificate</span>
+          <div class="cvb-ripple"></div>
+        </button>
+      </div>
+
+      <div class="cert-shine"></div>
+    </div>
+
+    <!-- ── CERT 3 — DSA ── -->
+    <div class="cert-card" data-reveal>
+      <div class="cert-card-glow"></div>
+
+      <div class="cert-platform-badge">
+        <span class="cpb-dot"></span>
+        Neo Colab
+      </div>
+
+      <div class="cert-icon-area cia-dsa">
+        <div class="cert-icon-bg"></div>
+        <div class="cert-visual">
+          <!-- Graph / nodes visual -->
+          <div class="cv-graph">
+            <div class="cvg-node cvgn-1"></div>
+            <div class="cvg-node cvgn-2"></div>
+            <div class="cvg-node cvgn-3"></div>
+            <div class="cvg-node cvgn-4"></div>
+            <div class="cvg-node cvgn-5"></div>
+            <svg class="cvg-edges" viewBox="0 0 120 90">
+              <line x1="60" y1="15" x2="20"  y2="50" stroke="rgba(0,229,255,0.35)" stroke-width="1.5"/>
+              <line x1="60" y1="15" x2="100" y2="50" stroke="rgba(0,229,255,0.35)" stroke-width="1.5"/>
+              <line x1="20" y1="50" x2="40"  y2="78" stroke="rgba(0,229,255,0.25)" stroke-width="1.5"/>
+              <line x1="100" y1="50" x2="80" y2="78" stroke="rgba(0,229,255,0.25)" stroke-width="1.5"/>
+            </svg>
+          </div>
+        </div>
+        <span class="cert-particle cp-1">O(n)</span>
+        <span class="cert-particle cp-2">[ ]</span>
+        <span class="cert-particle cp-3">∑</span>
+      </div>
+
+      <div class="cert-body">
+        <div class="cert-info">
+          <h3 class="cert-title">Data Structures & Algorithms</h3>
+          <p class="cert-platform-name">
+            <i class="fas fa-award"></i> Neo Colab
+          </p>
+          <p class="cert-desc">
+            Certification covering core data structures and algorithm concepts.
+          </p>
+        </div>
+        <button
+          class="cert-view-btn"
+          data-cert-url="https://drive.google.com/file/d/1xfmwKJiQbocoBUlK7g-QnjI-7ueuUy5q/preview"
+          data-cert-title="Data Structures & Algorithms — Neo Colab"
+          aria-label="View Certificate">
+          <i class="fas fa-external-link-alt"></i>
+          <span>View Certificate</span>
+          <div class="cvb-ripple"></div>
+        </button>
+      </div>
+
+      <div class="cert-shine"></div>
+    </div>
+
+    <!-- ── CERT 4 — Generative AI ── -->
+    <div class="cert-card" data-reveal>
+      <div class="cert-card-glow"></div>
+
+      <div class="cert-platform-badge">
+        <span class="cpb-dot"></span>
+        Udemy
+      </div>
+
+      <div class="cert-icon-area cia-ai">
+        <div class="cert-icon-bg"></div>
+        <div class="cert-visual">
+          <!-- Neural network visual -->
+          <div class="cv-neural">
+            <!-- Input layer -->
+            <div class="cnn-layer cnn-l1">
+              <div class="cnn-node"></div>
+              <div class="cnn-node"></div>
+              <div class="cnn-node"></div>
+            </div>
+            <!-- Hidden layer -->
+            <div class="cnn-layer cnn-l2">
+              <div class="cnn-node cnn-active"></div>
+              <div class="cnn-node"></div>
+              <div class="cnn-node cnn-active"></div>
+              <div class="cnn-node"></div>
+            </div>
+            <!-- Output layer -->
+            <div class="cnn-layer cnn-l3">
+              <div class="cnn-node cnn-output"></div>
+              <div class="cnn-node cnn-output"></div>
+            </div>
+          </div>
+        </div>
+        <span class="cert-particle cp-1">AI</span>
+        <span class="cert-particle cp-2">✦</span>
+        <span class="cert-particle cp-3">⚡</span>
+      </div>
+
+      <div class="cert-body">
+        <div class="cert-info">
+          <h3 class="cert-title">Generative AI Tools</h3>
+          <p class="cert-platform-name">
+            <i class="fas fa-award"></i> Udemy
+          </p>
+          <p class="cert-desc">
+            Certification focused on generative AI tools and modern AI workflows.
+          </p>
+        </div>
+        <button
+          class="cert-view-btn"
+          data-cert-url="https://drive.google.com/file/d/1QUYbz2lppo9YkXSTrAQhtBMLfsW9E0Rw/preview"
+          data-cert-title="Generative AI Tools — Udemy"
+          aria-label="View Certificate">
+          <i class="fas fa-external-link-alt"></i>
+          <span>View Certificate</span>
+          <div class="cvb-ripple"></div>
+        </button>
+      </div>
+
+      <div class="cert-shine"></div>
+    </div>
+
+  </div><!-- /cert-grid -->
+
+</section><!-- /certificates -->
+
+<!-- ==================== CERTIFICATE MODAL ==================== -->
+<div class="cert-modal-overlay" id="certModalOverlay" aria-hidden="true">
+  <div class="cert-modal" id="certModal" role="dialog" aria-modal="true">
+
+    <!-- Modal header -->
+    <div class="cert-modal-header">
+      <div class="cert-modal-title-wrap">
+        <i class="fas fa-certificate"></i>
+        <h3 class="cert-modal-title" id="certModalTitle">Certificate</h3>
+      </div>
+      <button class="cert-modal-close" id="certModalClose" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Modal body: iframe -->
+    <div class="cert-modal-body">
+      <div class="cert-modal-loader" id="certModalLoader">
+        <div class="cml-ring"></div>
+        <span>Loading certificate...</span>
+      </div>
+      <iframe
+        id="certModalFrame"
+        class="cert-modal-frame"
+        src=""
+        frameborder="0"
+        allow="autoplay"
+        title="Certificate Preview">
+      </iframe>
+    </div>
+
+    <!-- Modal footer -->
+    <div class="cert-modal-footer">
+      <a id="certModalOpenLink" href="#" target="_blank" class="cert-open-link">
+        <i class="fas fa-external-link-alt"></i> Open in New Tab
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- certificate section end -->
+
+
+
+
+
+
+<!-- ==================== TRAINING & EXPERIENCE SECTION ==================== -->
+<section class="experience" id="internship">
+
+  <!-- Section Header -->
+  <div class="section-header">
+    <p class="section-tag">// learning & growth</p>
+    <h2 class="section-title">Training & <span class="accent">Experience</span></h2>
+    <div class="section-line"></div>
+    <p class="section-subtitle">
+      Hands-on learning and practical experiences that helped me strengthen
+      my technical foundation in software development.
+    </p>
+  </div>
+
+  <div class="exp-wrapper">
+
+    <!-- ============================================================
+         LEFT COLUMN — TRAINING
+    ============================================================ -->
+    <div class="exp-column">
+
+      <!-- Column label -->
+      <div class="exp-col-label">
+        <div class="ecl-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Training</h3>
+        <div class="ecl-line"></div>
+      </div>
+
+      <!-- Timeline container -->
+      <div class="exp-timeline">
+
+        <!-- Vertical line -->
+        <div class="tl-track">
+          <div class="tl-progress" id="tlProgress"></div>
+        </div>
+
+        <!-- ── Training Card 1 — CSE Pathshala ── -->
+        <div class="tl-item" data-reveal>
+
+          <!-- Timeline dot -->
+          <div class="tl-dot">
+            <div class="tl-dot-inner"></div>
+            <div class="tl-dot-ring"></div>
+          </div>
+
+          <!-- Card -->
+          <div class="exp-card ec-training">
+
+            <!-- Card glow -->
+            <div class="exp-card-glow"></div>
+
+            <!-- Card header -->
+            <div class="exp-card-header">
+              <div class="exp-platform-badge">
+                <i class="fas fa-laptop-code"></i>
+                CSE Pathshala
+              </div>
+              <div class="exp-duration">
+                <i class="fas fa-calendar-alt"></i>
+                Jun 2024 – Jul 2024
+              </div>
+            </div>
+
+            <!-- Course title -->
+            <div class="exp-title-wrap">
+              <h4 class="exp-card-title">C++ Programming: OOPs and DSA</h4>
+              <div class="exp-type-tag">
+                <i class="fas fa-code"></i> Training
+              </div>
+            </div>
+
+            <!-- Animated illustration -->
+            <div class="exp-illustration exp-illu-cpp">
+              <div class="ei-bg-glow"></div>
+              <div class="ei-content">
+                <!-- Code window -->
+                <div class="ei-code-win">
+                  <div class="ei-win-bar">
+                    <span class="ei-dot ed-r"></span>
+                    <span class="ei-dot ed-y"></span>
+                    <span class="ei-dot ed-g"></span>
+                    <span class="ei-win-title">main.cpp</span>
+                  </div>
+                  <div class="ei-win-body">
+                    <div class="ei-code-line ecl-kw">class <span class="ecl-cl">Node</span> {</div>
+                    <div class="ei-code-line ecl-in">  int <span class="ecl-vr">data</span>;</div>
+                    <div class="ei-code-line ecl-in">  <span class="ecl-fn">Node</span>* next;</div>
+                    <div class="ei-code-line ecl-kw">};</div>
+                    <div class="ei-code-line ecl-cm">// OOP + DSA</div>
+                  </div>
+                </div>
+                <!-- Floating badges -->
+                <span class="ei-float-badge efb-1">OOP</span>
+                <span class="ei-float-badge efb-2">DSA</span>
+                <span class="ei-float-badge efb-3">C++</span>
+              </div>
+            </div>
+
+            <!-- Achievements -->
+            <ul class="exp-achievements">
+              <li>
+                <span class="ea-dot"></span>
+                Learned and implemented Object-Oriented Programming concepts
+                such as classes, inheritance, and polymorphism.
+              </li>
+              <li>
+                <span class="ea-dot"></span>
+                Practiced Data Structures and Algorithms to improve efficiency
+                and problem-solving ability.
+              </li>
+              <li>
+                <span class="ea-dot"></span>
+                Strengthened programming logic through hands-on coding and
+                algorithm design.
+              </li>
+            </ul>
+
+            <!-- Tech stack -->
+            <div class="exp-tech-stack">
+              <span class="exp-tech-tag ett-cpp">C++</span>
+              <span class="exp-tech-tag ett-oop">OOP</span>
+              <span class="exp-tech-tag ett-ds">Data Structures</span>
+              <span class="exp-tech-tag ett-algo">Algorithms</span>
+            </div>
+
+            <!-- View certificate -->
+            <button
+              class="exp-cert-btn"
+              data-cert-url="https://drive.google.com/file/d/1tnuIAfhEb8JW39CHf-IWRfa0CzTrZ6d9/preview"
+              data-cert-title="C++ Programming: OOPs and DSA — CSE Pathshala"
+              aria-label="View Certificate">
+              <i class="fas fa-certificate"></i>
+              <span>View Certificate</span>
+              <i class="fas fa-external-link-alt exp-btn-arrow"></i>
+            </button>
+
+            <!-- Card shine -->
+            <div class="exp-card-shine"></div>
+          </div>
+
+        </div><!-- /tl-item -->
+
+      </div><!-- /exp-timeline -->
+    </div><!-- /exp-column (training) -->
+
+    <!-- ============================================================
+         RIGHT COLUMN — EXPERIENCE
+    ============================================================ -->
+    <div class="exp-column">
+
+      <!-- Column label -->
+      <div class="exp-col-label">
+        <div class="ecl-icon ecl-icon--exp">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <h3>Experience</h3>
+        <div class="ecl-line"></div>
+      </div>
+
+      <!-- Experience placeholder -->
+      <div class="exp-timeline">
+
+        <div class="tl-track">
+          <div class="tl-progress"></div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot tl-dot--soon">
+            <div class="tl-dot-inner"></div>
+            <div class="tl-dot-ring"></div>
+          </div>
+
+          <div class="exp-card ec-soon">
+            <div class="exp-card-glow exp-card-glow--soon"></div>
+
+            <!-- Coming soon badge -->
+            <div class="exp-soon-badge">
+              <span class="esb-dot"></span>
+              Seeking Opportunities
+            </div>
+
+            <!-- Soon illustration -->
+            <div class="exp-illustration exp-illu-soon">
+              <div class="ei-bg-glow"></div>
+              <div class="ei-content">
+                <div class="soon-orbit-wrap">
+                  <div class="soon-orbit-ring sor-1"></div>
+                  <div class="soon-orbit-ring sor-2"></div>
+                  <div class="soon-orbit-ring sor-3"></div>
+                  <div class="soon-core-icon">
+                    <i class="fas fa-rocket"></i>
+                  </div>
+                  <div class="soon-orb sob-1"></div>
+                  <div class="soon-orb sob-2"></div>
+                  <div class="soon-orb sob-3"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="exp-soon-content">
+              <h4 class="exp-card-title">Professional Experience</h4>
+              <p class="exp-soon-text">
+                I am currently seeking opportunities to gain professional
+                experience where I can apply my skills in
+                <span class="highlight">software development</span>,
+                <span class="highlight">web technologies</span>, and
+                <span class="highlight">cloud computing</span> to build
+                impactful real-world solutions.
+              </p>
+
+              <!-- Skills ready -->
+              <div class="exp-ready-skills">
+                <p class="ers-label">// ready to contribute</p>
+                <div class="ers-tags">
+                  <span class="ers-tag"><i class="fab fa-react"></i> React</span>
+                  <span class="ers-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                  <span class="ers-tag"><i class="fab fa-aws"></i> AWS</span>
+                  <span class="ers-tag"><i class="fab fa-docker"></i> Docker</span>
+                  <span class="ers-tag"><i class="fab fa-python"></i> Python</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-card-shine"></div>
+          </div>
+
+        </div><!-- /tl-item -->
+      </div>
+
+    </div><!-- /exp-column (experience) -->
+
+  </div><!-- /exp-wrapper -->
+
+</section><!-- /experience -->
+
+<!-- ==================== EXPERIENCE MODAL ==================== -->
+<div class="exp-modal-overlay" id="expModalOverlay" aria-hidden="true">
+  <div class="exp-modal" id="expModal" role="dialog" aria-modal="true">
+
+    <div class="exp-modal-header">
+      <div class="exp-modal-title-wrap">
+        <i class="fas fa-certificate"></i>
+        <h3 class="exp-modal-title" id="expModalTitle">Certificate</h3>
+      </div>
+      <button class="exp-modal-close" id="expModalClose" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="exp-modal-body">
+      <div class="exp-modal-loader" id="expModalLoader">
+        <div class="eml-ring"></div>
+        <span>Loading certificate...</span>
+      </div>
+      <iframe
+        id="expModalFrame"
+        class="exp-modal-frame"
+        src=""
+        frameborder="0"
+        title="Certificate Preview">
+      </iframe>
+    </div>
+
+    <div class="exp-modal-footer">
+      <a id="expModalOpenLink" href="#" target="_blank" class="exp-open-link">
+        <i class="fas fa-external-link-alt"></i> Open in New Tab
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- experience section end -->
+
+
+
+
+
+
+
+<!-- ==================== EDUCATION SECTION ==================== -->
+<!-- ==================== EDUCATION SECTION ==================== -->
+<section class="education" id="education">
+
+  <!-- Section Header -->
+  <div class="section-header">
+    <p class="section-tag">// academic journey</p>
+    <h2 class="section-title">Edu<span class="accent">cation</span></h2>
+    <div class="section-line"></div>
+    <p class="section-subtitle">
+      My academic journey and the foundation that shaped my
+      technical skills and engineering mindset.
+    </p>
+  </div>
+
+  <div class="edu-layout">
+
+    <!-- ============================================================
+         LEFT — UNIVERSITY HERO CARD
+    ============================================================ -->
+    <div class="edu-left" data-reveal>
+
+      <div class="edu-hero-card">
+
+        <!-- Floating glass layers for depth -->
+        <div class="ehc-glass-layer egl-1"></div>
+        <div class="ehc-glass-layer egl-2"></div>
+        <div class="ehc-glass-layer egl-3"></div>
+
+        <!-- Animated background orbs -->
+        <div class="ehc-orb ehc-orb-1"></div>
+        <div class="ehc-orb ehc-orb-2"></div>
+        <div class="ehc-orb ehc-orb-3"></div>
+
+        <!-- Top badge row -->
+        <div class="ehc-top-row">
+          <div class="ehc-status">
+            <span class="ehc-status-dot"></span>
+            Currently Pursuing
+          </div>
+          <div class="ehc-year-tag">2023 — 2027</div>
+        </div>
+
+        <!-- University logo + name -->
+        <div class="ehc-identity">
+          <div class="ehc-logo-wrap">
+            <div class="ehc-logo">
+              <span>LPU</span>
+            </div>
+            <div class="ehc-logo-rings">
+              <div class="elr-ring elr-1"></div>
+              <div class="elr-ring elr-2"></div>
+            </div>
+          </div>
+          <div class="ehc-name-block">
+            <h3 class="ehc-uni-name">
+              Lovely Professional<br>University
+            </h3>
+            <p class="ehc-location">
+              <i class="fas fa-location-dot"></i>
+              Phagwara, Punjab, India
+            </p>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="ehc-divider">
+          <div class="ehc-divider-line"></div>
+          <span class="ehc-divider-icon"><i class="fas fa-graduation-cap"></i></span>
+          <div class="ehc-divider-line"></div>
+        </div>
+
+        <!-- Degree pills row -->
+        <div class="ehc-degree-row">
+          <div class="ehc-degree-pill">
+            <span class="edp-label">Degree</span>
+            <span class="edp-value">B.Tech</span>
+          </div>
+          <div class="ehc-degree-pill">
+            <span class="edp-label">Branch</span>
+            <span class="edp-value">CSE</span>
+          </div>
+          <div class="ehc-degree-pill ehc-degree-pill--accent">
+            <span class="edp-label">Minor</span>
+            <span class="edp-value">Cloud Computing</span>
+          </div>
+          <div class="ehc-degree-pill">
+            <span class="edp-label">Year</span>
+            <span class="edp-value">3rd</span>
+          </div>
+        </div>
+
+        <!-- CGPA section -->
+        <div class="ehc-cgpa-section">
+          <div class="ehc-cgpa-left">
+            <span class="ehc-cgpa-label">CGPA</span>
+            <div class="ehc-cgpa-big">
+              <span class="ehc-cgpa-num" id="eduCgpaNum">0.0</span>
+              <span class="ehc-cgpa-denom">/10</span>
+            </div>
+          </div>
+          <div class="ehc-cgpa-right">
+            <div class="ehc-cgpa-bar-wrap">
+              <div class="ehc-cgpa-bar">
+                <div class="ehc-cgpa-fill" id="eduCgpaFill" data-cgpa="70"></div>
+              </div>
+              <div class="ehc-cgpa-bar-glow"></div>
+            </div>
+            <div class="ehc-cgpa-ticks">
+              <span>0</span><span>2</span><span>4</span>
+              <span>6</span><span>8</span><span>10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <p class="ehc-desc">
+          Pursuing <span class="highlight">B.Tech CSE</span> with
+          specialization in <span class="highlight">Cloud Computing</span>.
+          Developing expertise in cloud technologies, modern web development,
+          and problem-solving while building real-world projects and
+          practising coding across development platforms.
+        </p>
+
+        <!-- Focus tags -->
+        <div class="ehc-focus-row">
+          <span class="ehc-focus-tag">
+            <i class="fas fa-cloud"></i> Cloud
+          </span>
+          <span class="ehc-focus-tag">
+            <i class="fas fa-code"></i> Web Dev
+          </span>
+          <span class="ehc-focus-tag">
+            <i class="fas fa-brain"></i> Problem Solving
+          </span>
+          <span class="ehc-focus-tag">
+            <i class="fas fa-diagram-project"></i> Projects
+          </span>
+        </div>
+
+        <!-- Key courses -->
+        <div class="ehc-courses">
+          <p class="ehc-courses-label">
+            <i class="fas fa-book-open"></i> Key Courses
+          </p>
+          <div class="ehc-courses-wrap">
+            <span class="ehc-course">Cloud Computing</span>
+            <span class="ehc-course">Data Structures & Algorithms</span>
+            <span class="ehc-course">OOP</span>
+            <span class="ehc-course">DevOps</span>
+            <span class="ehc-course">Computer Networks</span>
+            <span class="ehc-course">Operating Systems</span>
+            <span class="ehc-course">DBMS</span>
+          </div>
+        </div>
+
+      </div><!-- /edu-hero-card -->
+    </div><!-- /edu-left -->
+
+    <!-- ============================================================
+         RIGHT — SECONDARY + SNAPSHOT
+    ============================================================ -->
+    <div class="edu-right">
+
+      <!-- ── Higher Secondary Card ── -->
+      <div class="edu-glass-card edu-secondary" data-reveal>
+
+        <!-- Background layers -->
+        <div class="egc-orb egc-orb--green"></div>
+        <div class="egc-layer egc-layer-1"></div>
+
+        <!-- Header -->
+        <div class="egc-header">
+          <div class="egc-icon-wrap egc-icon--green">
+            <i class="fas fa-school"></i>
+          </div>
+          <div>
+            <h4 class="egc-title">Higher Secondary</h4>
+            <p class="egc-sub">Class XII — Science · 2023</p>
+          </div>
+          <div class="egc-year-badge">Until 2023</div>
+        </div>
+
+        <!-- Floating depth card -->
+        <div class="egc-inner-card">
+          <p class="egc-desc">
+            Completed with a focus on science and mathematics, building
+            a strong analytical and technical foundation for engineering.
+          </p>
+          <div class="egc-subjects">
+            <span class="egc-sub-tag est-phy">
+              <i class="fas fa-atom"></i> Physics
+            </span>
+            <span class="egc-sub-tag est-math">
+              <i class="fas fa-square-root-variable"></i> Mathematics
+            </span>
+            <span class="egc-sub-tag est-chem">
+              <i class="fas fa-flask"></i> Chemistry
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── Academic Snapshot Card ── -->
+      <div class="edu-glass-card edu-snapshot" data-reveal>
+
+        <div class="egc-orb egc-orb--violet"></div>
+        <div class="egc-layer egc-layer-2"></div>
+
+        <!-- Header -->
+        <div class="egc-header">
+          <div class="egc-icon-wrap egc-icon--violet">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <div>
+            <h4 class="egc-title">Academic Snapshot</h4>
+            <p class="egc-sub">Quick overview of my academic profile</p>
+          </div>
+        </div>
+
+        <!-- Snapshot grid -->
+        <div class="egc-snap-grid">
+
+          <div class="egc-snap-item" data-snap>
+            <div class="esi-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="esi-body">
+              <span class="esi-label">Degree</span>
+              <span class="esi-value">B.Tech CSE</span>
+            </div>
+            <div class="esi-check">
+              <i class="fas fa-check"></i>
+            </div>
+          </div>
+
+          <div class="egc-snap-item" data-snap>
+            <div class="esi-icon esi-icon--blue">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <div class="esi-body">
+              <span class="esi-label">Minor</span>
+              <span class="esi-value">Cloud Computing</span>
+            </div>
+            <div class="esi-check">
+              <i class="fas fa-check"></i>
+            </div>
+          </div>
+
+          <div class="egc-snap-item" data-snap>
+            <div class="esi-icon esi-icon--green">
+              <i class="fas fa-calendar-days"></i>
+            </div>
+            <div class="esi-body">
+              <span class="esi-label">Year</span>
+              <span class="esi-value">3rd Year</span>
+            </div>
+            <div class="esi-check">
+              <i class="fas fa-check"></i>
+            </div>
+          </div>
+
+          <div class="egc-snap-item" data-snap>
+            <div class="esi-icon esi-icon--gold">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="esi-body">
+              <span class="esi-label">CGPA</span>
+              <span class="esi-value">7.0 / 10</span>
+            </div>
+            <div class="esi-check">
+              <i class="fas fa-check"></i>
+            </div>
+          </div>
+
+          <div class="egc-snap-item" data-snap>
+            <div class="esi-icon esi-icon--cyan">
+              <i class="fas fa-location-dot"></i>
+            </div>
+            <div class="esi-body">
+              <span class="esi-label">University</span>
+              <span class="esi-value">LPU, Punjab</span>
+            </div>
+            <div class="esi-check">
+              <i class="fas fa-check"></i>
+            </div>
+          </div>
+
+          <div class="egc-snap-item" data-snap>
+            <div class="esi-icon esi-icon--pink">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="esi-body">
+              <span class="esi-label">Duration</span>
+              <span class="esi-value">2023 — 2027</span>
+            </div>
+            <div class="esi-check">
+              <i class="fas fa-check"></i>
+            </div>
+          </div>
+
+        </div><!-- /egc-snap-grid -->
+
+      </div><!-- /edu-snapshot -->
+
+    </div><!-- /edu-right -->
+
+  </div><!-- /edu-layout -->
+
+</section>
+
+<!-- education section end -->
+
+
+
+<!-- ==================== CONTACT SECTION ==================== -->
+<section class="contact" id="contact">
+
+  <!-- Section Header -->
+  <div class="section-header">
+    <p class="section-tag">// get in touch</p>
+    <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+    <div class="section-line"></div>
+    <p class="section-subtitle">
+      Feel free to reach out for collaborations, opportunities,
+      or technical discussions.
+    </p>
+  </div>
+
+  <div class="contact-wrapper">
+
+    <!-- ============================================================
+         LEFT — CONTACT INFO + SOCIAL
+    ============================================================ -->
+    <div class="contact-left" data-reveal>
+
+      <!-- Availability badge -->
+      <div class="contact-avail">
+        <span class="ca-dot"></span>
+        <span>Available for opportunities</span>
+      </div>
+
+      <!-- Info cards -->
+      <div class="contact-cards">
+
+        <!-- Email -->
+        <a href="mailto:suyash2004jaiswal@gmail.com"
+           class="contact-card cc-email">
+          <div class="cc-glow"></div>
+          <div class="cc-icon-wrap">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="cc-body">
+            <span class="cc-label">Email</span>
+            <span class="cc-value">suyash2004jaiswal@gmail.com</span>
+          </div>
+          <div class="cc-arrow">
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </div>
+          <div class="cc-shine"></div>
+        </a>
+
+        <!-- Location -->
+        <div class="contact-card cc-location">
+          <div class="cc-glow"></div>
+          <div class="cc-icon-wrap cc-icon--green">
+            <i class="fas fa-location-dot"></i>
+          </div>
+          <div class="cc-body">
+            <span class="cc-label">Location</span>
+            <span class="cc-value">Punjab, India</span>
+          </div>
+          <div class="cc-tag">Open to Remote</div>
+          <div class="cc-shine"></div>
+        </div>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/suyash-jaiswal-314100290"
+           target="_blank" class="contact-card cc-linkedin">
+          <div class="cc-glow"></div>
+          <div class="cc-icon-wrap cc-icon--blue">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div class="cc-body">
+            <span class="cc-label">LinkedIn</span>
+            <span class="cc-value">suyash-jaiswal</span>
+          </div>
+          <div class="cc-arrow">
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </div>
+          <div class="cc-shine"></div>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/2004Suyash"
+           target="_blank" class="contact-card cc-github">
+          <div class="cc-glow"></div>
+          <div class="cc-icon-wrap cc-icon--white">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="cc-body">
+            <span class="cc-label">GitHub</span>
+            <span class="cc-value">2004Suyash</span>
+          </div>
+          <div class="cc-arrow">
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </div>
+          <div class="cc-shine"></div>
+        </a>
+
+        <!-- LeetCode -->
+        <a href="https://leetcode.com/u/suyash_jaiswal04/"
+           target="_blank" class="contact-card cc-leetcode">
+          <div class="cc-glow"></div>
+          <div class="cc-icon-wrap cc-icon--orange">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="cc-body">
+            <span class="cc-label">LeetCode</span>
+            <span class="cc-value">suyash_jaiswal04</span>
+          </div>
+          <div class="cc-arrow">
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </div>
+          <div class="cc-shine"></div>
+        </a>
+
+        <!-- GeeksforGeeks -->
+        <a href="https://www.geeksforgeeks.org/user/suyash2004jaiswal/"
+           target="_blank" class="contact-card cc-gfg">
+          <div class="cc-glow"></div>
+          <div class="cc-icon-wrap cc-icon--gfg">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="cc-body">
+            <span class="cc-label">GeeksforGeeks</span>
+            <span class="cc-value">suyash2004jaiswal</span>
+          </div>
+          <div class="cc-arrow">
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </div>
+          <div class="cc-shine"></div>
+        </a>
+
+      </div><!-- /contact-cards -->
+
+      <!-- Find Me Online -->
+      <div class="find-online">
+        <p class="fo-label">// find me online</p>
+        <div class="fo-icons">
+
+          <a href="https://www.linkedin.com/in/suyash-jaiswal-314100290"
+             target="_blank" class="fo-icon fo-linkedin" aria-label="LinkedIn">
+            <div class="fo-icon-inner">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <span>LinkedIn</span>
+            <div class="fo-glow"></div>
+          </a>
+
+          <a href="https://github.com/2004Suyash"
+             target="_blank" class="fo-icon fo-github" aria-label="GitHub">
+            <div class="fo-icon-inner">
+              <i class="fab fa-github"></i>
+            </div>
+            <span>GitHub</span>
+            <div class="fo-glow"></div>
+          </a>
+
+          <a href="https://leetcode.com/u/suyash_jaiswal04/"
+             target="_blank" class="fo-icon fo-leetcode" aria-label="LeetCode">
+            <div class="fo-icon-inner">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.8a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+              </svg>
+            </div>
+            <span>LeetCode</span>
+            <div class="fo-glow"></div>
+          </a>
+
+          <a href="https://www.geeksforgeeks.org/user/suyash2004jaiswal/"
+             target="_blank" class="fo-icon fo-gfg" aria-label="GeeksforGeeks">
+            <div class="fo-icon-inner">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <span>GFG</span>
+            <div class="fo-glow"></div>
+          </a>
+
+        </div>
+      </div>
+
+    </div><!-- /contact-left -->
+
+    <!-- ============================================================
+         RIGHT — CONTACT FORM
+    ============================================================ -->
+    <div class="contact-right" data-reveal>
+
+      <div class="contact-form-card">
+
+        <!-- Form card glow layers -->
+        <div class="cfc-orb cfc-orb-1"></div>
+        <div class="cfc-orb cfc-orb-2"></div>
+        <div class="cfc-glass-layer"></div>
+
+        <!-- Form header -->
+        <div class="cfc-header">
+          <div class="cfc-header-icon">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+          <div>
+            <h3 class="cfc-title">Send a Message</h3>
+            <p class="cfc-sub">I'll get back to you within 24 hours</p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form" id="contactForm" novalidate>
+
+          <!-- Row: Name + Email -->
+          <div class="cf-row">
+
+            <!-- Full Name -->
+            <div class="cf-field" id="fieldName">
+              <div class="cf-input-wrap">
+                <input
+                  type="text"
+                  id="inputName"
+                  class="cf-input"
+                  placeholder=" "
+                  autocomplete="off"/>
+                <label for="inputName" class="cf-label">
+                  <i class="fas fa-user"></i> Full Name
+                </label>
+                <div class="cf-underline"></div>
+              </div>
+              <span class="cf-error" id="errorName">
+                Please enter your name
+              </span>
+            </div>
+
+            <!-- Email -->
+            <div class="cf-field" id="fieldEmail">
+              <div class="cf-input-wrap">
+                <input
+                  type="email"
+                  id="inputEmail"
+                  class="cf-input"
+                  placeholder=" "
+                  autocomplete="off"/>
+                <label for="inputEmail" class="cf-label">
+                  <i class="fas fa-envelope"></i> Email Address
+                </label>
+                <div class="cf-underline"></div>
+              </div>
+              <span class="cf-error" id="errorEmail">
+                Please enter a valid email
+              </span>
+            </div>
+
+          </div><!-- /cf-row -->
+
+          <!-- Subject -->
+          <div class="cf-field" id="fieldSubject">
+            <div class="cf-input-wrap">
+              <input
+                type="text"
+                id="inputSubject"
+                class="cf-input"
+                placeholder=" "
+                autocomplete="off"/>
+              <label for="inputSubject" class="cf-label">
+                <i class="fas fa-tag"></i> Subject
+              </label>
+              <div class="cf-underline"></div>
+            </div>
+            <span class="cf-error" id="errorSubject">
+              Please enter a subject
+            </span>
+          </div>
+
+          <!-- Message -->
+          <div class="cf-field" id="fieldMessage">
+            <div class="cf-input-wrap">
+              <textarea
+                id="inputMessage"
+                class="cf-input cf-textarea"
+                placeholder=" "
+                rows="5"></textarea>
+              <label for="inputMessage" class="cf-label cf-label-ta">
+                <i class="fas fa-message"></i> Message
+              </label>
+              <div class="cf-underline"></div>
+            </div>
+            <span class="cf-error" id="errorMessage">
+              Please enter your message
+            </span>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="cf-submit-btn" id="submitBtn">
+            <div class="csb-content">
+              <i class="fas fa-paper-plane"></i>
+              <span>Send Message</span>
+            </div>
+            <div class="csb-loader" id="btnLoader">
+              <div class="csb-spinner"></div>
+            </div>
+            <div class="csb-shine"></div>
+          </button>
+
+        </form>
+
+        <!-- Success message -->
+        <div class="cf-success" id="cfSuccess">
+          <div class="cfs-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h4>Message Sent!</h4>
+          <p>Thanks for reaching out. I'll get back to you soon.</p>
+          <button class="cfs-reset" id="cfsReset">Send Another</button>
+        </div>
+
+      </div><!-- /contact-form-card -->
+
+    </div><!-- /contact-right -->
+
+  </div><!-- /contact-wrapper -->
+
+</section>
+
+
+<!-- /contact end -->
+
+
+
+
+
+<!-- ==================== FOOTER ==================== -->
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer" id="footer">
+
+  <!-- Animated top border -->
+  <div class="footer-top-border">
+    <div class="ftb-line"></div>
+    <div class="ftb-glow"></div>
+  </div>
+
+  <!-- Background elements -->
+  <div class="footer-bg">
+    <div class="fbg-orb fbg-orb-1"></div>
+    <div class="fbg-orb fbg-orb-2"></div>
+    <div class="fbg-grid"></div>
+  </div>
+
+  <!-- ==================== MAIN FOOTER CONTENT ==================== -->
+  <div class="footer-main">
+    <div class="footer-container">
+
+      <!-- ── COLUMN 1: Personal Brand ── -->
+      <div class="footer-col footer-brand" data-footer-reveal>
+
+        <!-- Logo / Name -->
+        <div class="fb-logo">
+          <div class="fb-logo-badge">SJ</div>
+          <div class="fb-logo-glow"></div>
+        </div>
+
+        <h3 class="fb-name">
+          <span class="fb-name-first">Suyash</span>
+          <span class="fb-name-last accent">Jaiswal</span>
+        </h3>
+
+        <p class="fb-tagline">
+          Aspiring Cloud Engineer passionate about building
+          <span class="highlight">scalable software systems</span>,
+          modern web applications, and
+          <span class="highlight">cloud-powered solutions</span>.
+        </p>
+
+        <!-- Tech stack pills -->
+        <div class="fb-stack">
+          <span class="fb-stack-pill">
+            <i class="fab fa-react"></i> React
+          </span>
+          <span class="fb-stack-pill">
+            <i class="fab fa-node-js"></i> Node
+          </span>
+          <span class="fb-stack-pill">
+            <i class="fab fa-aws"></i> AWS
+          </span>
+          <span class="fb-stack-pill">
+            <i class="fab fa-docker"></i> Docker
+          </span>
+        </div>
+
+        <!-- Status -->
+        <div class="fb-status">
+          <span class="fb-status-dot"></span>
+          <span>Open to opportunities</span>
+        </div>
+
+      </div><!-- /footer-brand -->
+
+      <!-- ── COLUMN 2: Quick Links ── -->
+      <div class="footer-col footer-links-col" data-footer-reveal>
+
+        <h4 class="footer-col-title">
+          <span class="fct-prefix">//</span> Quick Links
+        </h4>
+
+        <ul class="footer-nav">
+          <li>
+            <a href="#home" class="footer-nav-link">
+              <span class="fnl-arrow">→</span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="footer-nav-link">
+              <span class="fnl-arrow">→</span>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills" class="footer-nav-link">
+              <span class="fnl-arrow">→</span>
+              <span>Skills</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="footer-nav-link">
+              <span class="fnl-arrow">→</span>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#certificates" class="footer-nav-link">
+              <span class="fnl-arrow">→</span>
+              <span>Certificates</span>
+            </a>
+          </li>
+          <li>
+            <a href="#internship" class="footer-nav-link">
+              <span class="fnl-arrow">→</span>
+              <span>Experience</span>
+            </a>
+          </li>
+          <li>
+            <a href="#education" class="footer-nav-link">
+              <span class="fnl-arrow">→</span>
+              <span>Education</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="footer-nav-link">
+              <span class="fnl-arrow">→</span>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+
+      </div><!-- /footer-links-col -->
+
+      <!-- ── COLUMN 3: Connect ── -->
+      <div class="footer-col footer-connect" data-footer-reveal>
+
+        <h4 class="footer-col-title">
+          <span class="fct-prefix">//</span> Connect With Me
+        </h4>
+
+        <div class="fc-social-list">
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/suyash-jaiswal-314100290"
+             target="_blank" class="fc-social-item fcs-linkedin">
+            <div class="fcs-icon-wrap">
+              <i class="fab fa-linkedin-in"></i>
+              <div class="fcs-glow"></div>
+            </div>
+            <div class="fcs-body">
+              <span class="fcs-name">LinkedIn</span>
+              <span class="fcs-handle">suyash-jaiswal</span>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square fcs-arrow"></i>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/2004Suyash"
+             target="_blank" class="fc-social-item fcs-github">
+            <div class="fcs-icon-wrap fcs-iw--white">
+              <i class="fab fa-github"></i>
+              <div class="fcs-glow"></div>
+            </div>
+            <div class="fcs-body">
+              <span class="fcs-name">GitHub</span>
+              <span class="fcs-handle">2004Suyash</span>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square fcs-arrow"></i>
+          </a>
+
+          <!-- LeetCode -->
+          <a href="https://leetcode.com/u/suyash_jaiswal04/"
+             target="_blank" class="fc-social-item fcs-leetcode">
+            <div class="fcs-icon-wrap fcs-iw--orange">
+              <svg viewBox="0 0 24 24" fill="currentColor"
+                   width="16" height="16">
+                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.8a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+              </svg>
+              <div class="fcs-glow"></div>
+            </div>
+            <div class="fcs-body">
+              <span class="fcs-name">LeetCode</span>
+              <span class="fcs-handle">suyash_jaiswal04</span>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square fcs-arrow"></i>
+          </a>
+
+          <!-- GeeksforGeeks -->
+          <a href="https://www.geeksforgeeks.org/user/suyash2004jaiswal/"
+             target="_blank" class="fc-social-item fcs-gfg">
+            <div class="fcs-icon-wrap fcs-iw--gfg">
+              <i class="fas fa-laptop-code"></i>
+              <div class="fcs-glow"></div>
+            </div>
+            <div class="fcs-body">
+              <span class="fcs-name">GeeksforGeeks</span>
+              <span class="fcs-handle">suyash2004jaiswal</span>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square fcs-arrow"></i>
+          </a>
+
+        </div><!-- /fc-social-list -->
+
+      </div><!-- /footer-connect -->
+
+      <!-- ── COLUMN 4: Contact Info ── -->
+      <div class="footer-col footer-contact-info" data-footer-reveal>
+
+        <h4 class="footer-col-title">
+          <span class="fct-prefix">//</span> Contact Info
+        </h4>
+
+        <div class="fci-items">
+
+          <!-- Email -->
+          <a href="mailto:suyash2004jaiswal@gmail.com"
+             class="fci-item">
+            <div class="fci-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="fci-body">
+              <span class="fci-label">Email</span>
+              <span class="fci-value">suyash2004jaiswal@gmail.com</span>
+            </div>
+          </a>
+
+          <!-- Location -->
+          <div class="fci-item">
+            <div class="fci-icon fci-icon--green">
+              <i class="fas fa-location-dot"></i>
+            </div>
+            <div class="fci-body">
+              <span class="fci-label">Location</span>
+              <span class="fci-value">Punjab, India</span>
+            </div>
+          </div>
+
+          <!-- Availability -->
+          <div class="fci-item">
+            <div class="fci-icon fci-icon--violet">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="fci-body">
+              <span class="fci-label">Availability</span>
+              <span class="fci-value fci-available">
+                <span class="fci-dot"></span>
+                Open to Work
+              </span>
+            </div>
+          </div>
+
+        </div><!-- /fci-items -->
+
+        <!-- Resume download -->
+        <a href="https://drive.google.com/uc?export=download&id=10kr8hy4Vqtyl9G3hch96DzJyAw8CgeGr"
+           class="fci-resume-btn" target="_blank" download>
+          <i class="fas fa-download"></i>
+          <span>Download Resume</span>
+        </a>
+
+      </div><!-- /footer-contact-info -->
+
+    </div><!-- /footer-container -->
+  </div><!-- /footer-main -->
+
+  <!-- ==================== BOTTOM BAR ==================== -->
+  <div class="footer-bottom">
+    <div class="footer-container">
+      <div class="fb-bottom-inner">
+
+        <!-- Left: copyright -->
+        <div class="fbb-left">
+          <p class="fbb-copy">
+            &copy; 2025
+            <span class="accent">Suyash Jaiswal</span>.
+            All Rights Reserved.
+          </p>
+          <p class="fbb-built">
+            <span class="fbb-code">
+              &lt;/&gt;
+            </span>
+            Built with HTML, CSS &amp; JavaScript
+          </p>
+        </div>
+
+        <!-- Center: mini nav -->
+        <div class="fbb-center">
+          <a href="#home" class="fbb-link">Home</a>
+          <span class="fbb-sep">·</span>
+          <a href="#projects" class="fbb-link">Projects</a>
+          <span class="fbb-sep">·</span>
+          <a href="#contact" class="fbb-link">Contact</a>
+        </div>
+
+        <!-- Right: back to top -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <div class="btt-icon">
+            <i class="fas fa-chevron-up"></i>
+          </div>
+          <span>Top</span>
+          <div class="btt-glow"></div>
+        </button>
+
+      </div>
+    </div>
+  </div><!-- /footer-bottom -->
+
+</footer>
+
+
+
+<!-- footer section end -->
+
+  <script src="script.js"></script>
+</body>
+</html>
